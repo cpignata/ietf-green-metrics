@@ -17,6 +17,8 @@
   <!ENTITY I-D.cx-green-ps SYSTEM "http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.cx-green-ps.xml">
   <!ENTITY I-D.chunduri-rtgwg-preferred-path-routing SYSTEM "http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.chunduri-rtgwg-preferred-path-routing.xml">
   <!ENTITY I-D.manral-bmwg-power-usage SYSTEM "http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.manral-bmwg-power-usage.xml">
+  <!ENTITY I-D.opsawg-poweff SYSTEM "http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.opsawg-poweff.xml">
+  <!ENTITY I-D.li-ivy-power SYSTEM "http://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.li-ivy-power">
 ]>
 <?rfc comments="yes"?>
 <?rfc compact="no"?>
@@ -103,7 +105,7 @@
       </address>
     </author>
 
-    <date day="" month="" year="2023"/>
+    <date day="15" month="December" year="2023"/>
     <abstract>
       <t>
     This document explains the need for network instrumentation that allows to assess a number of sustainability-related attributes such as  power consumption, energy efficiency, and carbon footprint associated with a network, its equipment, and the services that are provided over it. It also suggests a set of related metrics that, when provided visibility into, can help to optimize a network's "greenness" accordingly.
@@ -121,12 +123,10 @@ increasing importance for society and all industries.  The networking industry i
 exception.   
 </t>
 <t>
-Networks themselves consume significant amounts of energy and thus contribute to greenhouse emissions. Therefore, the networking industry has an important role to play in meeting sustainability goals. Future networking advances will increasingly need to focus on becoming more sustainable and reducing carbon footprint, both for economic reasons and for reasons of corporate social responsibility. Those advances initially focus on improving energy efficiency and will continue in several other areas.  Of equivalent important is how power is being sourced (e.g., carbon versus solar based). Other factors include considerations for the lifecycle of hardware (e.g., embedded carbon during material extraction and manufacturing, transportation, software versus forklift upgrades, consumption of cloud-delivered), and considerations related to deployments (for example, minimizing the "energy tax" associated with heating or cooling of networking devices).  This shift has already begun, and sustainability is well on its way towards becoming an important concern for network providers <xref target="Telefonica2021" format="default"/>.   
-</t>
+Networks themselves consume significant amounts of energy and thus contribute to greenhouse emissions. Therefore, the networking industry has an important role to play in meeting sustainability goals. Future networking advances will increasingly need to focus on becoming more sustainable and reducing carbon footprint, both for economic reasons and for reasons of corporate social responsibility. Those advances initially focus on improving energy efficiency and will continue in several other areas.  Of equivalent important is how power is being sourced (e.g., carbon versus solar based). Other factors include considerations for the lifecycle of hardware (e.g., embedded carbon during material extraction and manufacturing, transportation, software versus forklift upgrades, consumption of cloud-delivered), and considerations related to deployments (for example, minimizing the "energy tax" associated with heating or cooling of networking devices).  This shift has already begun and sustainability is well on its way towards becoming an important concern for network providers <xref target="Telefonica2021" format="default"/>.   
+A broader underlying background and analysis on sustainability considerations for networking can be found at <xref target="I-D.cparsk-eimpact-sustainability-considerations" />.</t>
 
-<t>A broader underlying background and analysis on sustainability considerations for networking can be found at <xref target="I-D.cparsk-eimpact-sustainability-considerations" />.</t>
-
-<t>There are many vectors along which networks can be made "greener". At its foundation, it involves network equipment itself. For example, making such equipment more energy-efficient is a big factor in helping networks become greener.  However, opportunities also exist at the level of protocols themselves (e.g., reduction of transmission waste and enabling of rapid control loops), at the level of the overall network (e.g., path optimization under consideration of energy efficiency as a cost factor), and architecture level (e.g., placement of contents and functions) <xref target="I-D.cx-green-ps" format="default"/>.
+<t>There are many vectors along which networks can be made "greener". At its foundation, it involves network equipment itself. For example, making such equipment more energy-efficient is a big factor in helping networks become greener.  However, opportunities also exist at the level of protocols themselves (e.g., reduction of transmission waste and enabling of rapid control loops), at the level of the overall network (e.g., path optimization under consideration of energy efficiency as a cost factor), and architecture level (e.g., placement of contents and functions). A good overview of such opportunities and associated challenges is provided in <xref target="I-D.cx-green-ps" format="default"/>.
 </t>
 <t>
 Regardless of any particular approach that is chosen, in order to assess its impact, there is a need to have visibility. For example, techniques that attempt to minimize energy consumption may need visibility into the actual energy consumption that is occurring in a network and to ideally be able to attribute that consumption to what is causing it.  As the adage goes, you cannot manage what you cannot measure. By extension, you cannot optimize what you have no visibility of.  The ability to instrument networks in a way that allows for the assessment of factors related to a network's environmental footprint is hence an important enabler for potential optimizations that help to reduce that footprint. Not only does it allow to assess the effectiveness of measures being taken, but it also enables (for example) control loops based on those factors. Before instrumenting, it needs to be clear, however, what the proper metrics are that network providers will be interested in and that applications will seek to optimize.  
@@ -208,6 +208,8 @@ The power consumption of the device can be divided into the consumption of the c
 Furthermore, it is important to understand the difference between power consumption when a resource is idling versus when it is under load. This helps to understand the incremental cost of additional transmission versus the initial cost of transmission. 
 Generally, the cost of the first bit could be considered very high, as it requires powering up a device, port, etc.
 The cost of transmission of additional bits (beyond the first) is many orders of magnitude lower. Likewise, the incremental cost of CPU and memory that will be needed to process additional packets becomes negligible.
+</t>
+<t>In the following, sets of metrics are defined that are deemed useful to assess sustainability of network technology at the device level. These metrics are defined independently of their particular representation as part of a data model, for example a YANG data model. The definition of such data models is outside the scope of this document.  An example of such a YANG data model used can be found in <xref target="I-D.opsawg-poweff" format="default"/>, concerned with  power efficiency of networking devices.  A second example can be found in <xref target="I-D.li-ivy-power" format="default"/>, concerned not so much with metrics but with control knobs to help manage power saving modes of network devices in an inventory.  Either of these data models are expected to contain representations for metrics that are defined here as applicable.  
 </t>
           <t>
 The first set of metrics corresponds to energy ratings of the device.  Such metrics can be useful for purposes such as planning of network deployments or optimization of configuration of paths.  They also provide a good proxy to model expected actual energy use in a network.   
@@ -343,12 +345,12 @@ The following are a corresponding set of candidate metrics:
       <section numbered="true" toc="default">
         <name>Energy Metrics related to the Network-at-Large</name>
         <t>Ultimately, the goal of energy optimization and reduction of carbon footprint is to minimize the aggregate amount of energy used across the entire network, as well as to minimize the overall carbon footprint of the network as a whole. Accordingly, metrics that aggregate the energy usage across the network as a whole are needed.  In order to account for changing traffic profiles, growth in user traffic, etc., additional metrics are needed that normalize the total over the volume of services supported and volume of traffic passed.  Corresponding metrics will generally be computed at the level of Operational Support Systems (or Business Support Systems) for the entire network.  </t>
-        <t>Some of the metrics used include the following <xref target="Telefonica2021" format="default"/>:
-</t>
+        <t>Some of the metrics used include the following:</t>
         <ul spacing="normal">
-          <li>Total energy consumption (MWh)</li>
-          <li>Electricity from renewable sources (%)</li>
-          <li>Network energy efficiency (MWh/PB)</li>
+          <li>Total energy consumption (MWh), the entire energy consumption that can be attributed to the network <xref target="Telefonica2021" format="default"/></li>
+          <li>Electricity from renewable sources (%), the percentage of total energy consumption that comes from renewables <xref target="Telefonica2021" format="default"/></li>
+          <li>Network energy efficiency (MWh/PB), relating total energy consumption to the utility derived from the network as measured by the total amount of data being transmitted <xref target="Telefonica2021" format="default"/></li>
+          <li>Energy efficiency rating (EER), the ratio between network net energy consumption of networking devices and the total energy consumption <xref target="ETSI2023-EEPS65" format="default"/></li>
         </ul>
       </section>
     </section>
@@ -457,6 +459,8 @@ We would like to thank Michael Welzl and Alexandru Petrescu for reviews and supe
       &I-D.cx-green-ps;
       &I-D.chunduri-rtgwg-preferred-path-routing;
       &I-D.manral-bmwg-power-usage;
+      &I-D.opsawg-poweff;
+      &I-D.li-ivy-power;
 
       &RFC6988;
       &RFC7011;
@@ -624,7 +628,14 @@ We would like to thank Michael Welzl and Alexandru Petrescu for reviews and supe
       <date month="August" year="2017"/>
       </front>
       </reference>
-
+      
+      <reference anchor="ETSI2023-EEPS65">
+      <front>
+      <title>DES/EE-EEPS65: Environmental Engineering (EE): Fixed Network Energy Efficiency definition and measurement (Work Item)</title>
+      <author fullname="ETSI"> </author>
+      <date month="October" year="2023"/>
+      </front>
+      </reference>
       
     </references>
   </back>

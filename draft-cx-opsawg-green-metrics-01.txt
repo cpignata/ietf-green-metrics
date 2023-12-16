@@ -5,7 +5,7 @@
 Network Working Group                                      A. Clemm, Ed.
 Internet-Draft                                                   L. Dong
 Intended status: Informational                                 Futurewei
-Expires: 12 June 2024                                          G. Mirsky
+Expires: 17 June 2024                                          G. Mirsky
                                                                 Ericsson
                                                             L. Ciavaglia
                                                                    Nokia
@@ -19,7 +19,7 @@ Expires: 12 June 2024                                          G. Mirsky
                                                                    Nokia
                                                        C. Pignataro, Ed.
                                                      NC State University
-                                                        10 December 2023
+                                                        15 December 2023
 
 
                         Green Networking Metrics
@@ -53,12 +53,12 @@ Status of This Memo
 
 
 
-Clemm, et al.             Expires 12 June 2024                  [Page 1]
+Clemm, et al.             Expires 17 June 2024                  [Page 1]
 
 Internet-Draft          Green Networking Metrics           December 2023
 
 
-   This Internet-Draft will expire on 12 June 2024.
+   This Internet-Draft will expire on 17 June 2024.
 
 Copyright Notice
 
@@ -86,18 +86,18 @@ Table of Contents
      3.2.  Green Metrics related to Flows  . . . . . . . . . . . . .  13
      3.3.  Energy Metrics related to Paths . . . . . . . . . . . . .  14
      3.4.  Energy Metrics related to the Network-at-Large  . . . . .  15
-   4.  Other considerations  . . . . . . . . . . . . . . . . . . . .  15
-     4.1.  User perspective  . . . . . . . . . . . . . . . . . . . .  15
+   4.  Other considerations  . . . . . . . . . . . . . . . . . . . .  16
+     4.1.  User perspective  . . . . . . . . . . . . . . . . . . . .  16
      4.2.  Holistic perspective  . . . . . . . . . . . . . . . . . .  16
-     4.3.  Sustainable equipment production  . . . . . . . . . . . .  16
-     4.4.  Dealing with imprecision and uncertainty  . . . . . . . .  17
+     4.3.  Sustainable equipment production  . . . . . . . . . . . .  17
+     4.4.  Dealing with imprecision and uncertainty  . . . . . . . .  18
      4.5.  Certification . . . . . . . . . . . . . . . . . . . . . .  18
      4.6.  Green metrics defined elsewhere . . . . . . . . . . . . .  18
    5.  Controversies . . . . . . . . . . . . . . . . . . . . . . . .  19
    6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  20
    7.  Security Considerations . . . . . . . . . . . . . . . . . . .  20
    8.  Acknowledgments . . . . . . . . . . . . . . . . . . . . . . .  20
-   9.  Informative References  . . . . . . . . . . . . . . . . . . .  20
+   9.  Informative References  . . . . . . . . . . . . . . . . . . .  21
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  24
 
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Clemm, et al.             Expires 12 June 2024                  [Page 2]
+Clemm, et al.             Expires 17 June 2024                  [Page 2]
 
 Internet-Draft          Green Networking Metrics           December 2023
 
@@ -137,12 +137,11 @@ Internet-Draft          Green Networking Metrics           December 2023
    transportation, software versus forklift upgrades, consumption of
    cloud-delivered), and considerations related to deployments (for
    example, minimizing the "energy tax" associated with heating or
-   cooling of networking devices).  This shift has already begun, and
+   cooling of networking devices).  This shift has already begun and
    sustainability is well on its way towards becoming an important
-   concern for network providers [Telefonica2021].
-
-   A broader underlying background and analysis on sustainability
-   considerations for networking can be found at
+   concern for network providers [Telefonica2021].  A broader underlying
+   background and analysis on sustainability considerations for
+   networking can be found at
    [I-D.cparsk-eimpact-sustainability-considerations].
 
    There are many vectors along which networks can be made "greener".
@@ -153,7 +152,9 @@ Internet-Draft          Green Networking Metrics           December 2023
    transmission waste and enabling of rapid control loops), at the level
    of the overall network (e.g., path optimization under consideration
    of energy efficiency as a cost factor), and architecture level (e.g.,
-   placement of contents and functions) [I-D.cx-green-ps].
+   placement of contents and functions).  A good overview of such
+   opportunities and associated challenges is provided in
+   [I-D.cx-green-ps].
 
    Regardless of any particular approach that is chosen, in order to
    assess its impact, there is a need to have visibility.  For example,
@@ -161,15 +162,15 @@ Internet-Draft          Green Networking Metrics           December 2023
    visibility into the actual energy consumption that is occurring in a
    network and to ideally be able to attribute that consumption to what
    is causing it.  As the adage goes, you cannot manage what you cannot
-   measure.  By extension, you cannot optimize what you have no
 
 
 
-Clemm, et al.             Expires 12 June 2024                  [Page 3]
+Clemm, et al.             Expires 17 June 2024                  [Page 3]
 
 Internet-Draft          Green Networking Metrics           December 2023
 
 
+   measure.  By extension, you cannot optimize what you have no
    visibility of.  The ability to instrument networks in a way that
    allows for the assessment of factors related to a network's
    environmental footprint is hence an important enabler for potential
@@ -220,8 +221,7 @@ Internet-Draft          Green Networking Metrics           December 2023
 
 
 
-
-Clemm, et al.             Expires 12 June 2024                  [Page 4]
+Clemm, et al.             Expires 17 June 2024                  [Page 4]
 
 Internet-Draft          Green Networking Metrics           December 2023
 
@@ -277,7 +277,7 @@ Internet-Draft          Green Networking Metrics           December 2023
 
 
 
-Clemm, et al.             Expires 12 June 2024                  [Page 5]
+Clemm, et al.             Expires 17 June 2024                  [Page 5]
 
 Internet-Draft          Green Networking Metrics           December 2023
 
@@ -333,7 +333,7 @@ Internet-Draft          Green Networking Metrics           December 2023
 
 
 
-Clemm, et al.             Expires 12 June 2024                  [Page 6]
+Clemm, et al.             Expires 17 June 2024                  [Page 6]
 
 Internet-Draft          Green Networking Metrics           December 2023
 
@@ -373,6 +373,27 @@ Internet-Draft          Green Networking Metrics           December 2023
    Likewise, the incremental cost of CPU and memory that will be needed
    to process additional packets becomes negligible.
 
+   In the following, sets of metrics are defined that are deemed useful
+   to assess sustainability of network technology at the device level.
+   These metrics are defined independently of their particular
+   representation as part of a data model, for example a YANG data
+   model.  The definition of such data models is outside the scope of
+   this document.  An example of such a YANG data model used can be
+   found in [I-D.opsawg-poweff], concerned with power efficiency of
+   networking devices.  A second example can be found in
+   [I-D.li-ivy-power], concerned not so much with metrics but with
+   control knobs to help manage power saving modes of network devices in
+   an inventory.  Either of these data models are expected to contain
+   representations for metrics that are defined here as applicable.
+
+
+
+
+Clemm, et al.             Expires 17 June 2024                  [Page 7]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    The first set of metrics corresponds to energy ratings of the device.
    Such metrics can be useful for purposes such as planning of network
    deployments or optimization of configuration of paths.  They also
@@ -385,14 +406,6 @@ Internet-Draft          Green Networking Metrics           December 2023
 
    *  Power consumption at various loads: e.g., power consumption at 50%
       utilization, power consumption at 90% utilization
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                  [Page 7]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
    These metrics should be maintained for the device as a whole, and for
    the subcomponents, i.e.:
@@ -429,6 +442,14 @@ Internet-Draft          Green Networking Metrics           December 2023
    power being drawn during operation.  It is the type of data that
    might be provided as management data.  Possible uses include
    accounting for actual power usage and comparing actual with expected
+
+
+
+Clemm, et al.             Expires 17 June 2024                  [Page 8]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    consumption to refine and calibrate consumption models.  Again,
    metrics should be provided for the device as a whole, as well as for
    the subcomponents reflected in the device hierarchy: line cards,
@@ -439,16 +460,6 @@ Internet-Draft          Green Networking Metrics           December 2023
    *  Energy drawn since system start (or module insertion, if at the
       level of a line card, or port activation, if at the level of a
       port), for the past minute (e.g., Watt hours)
-
-
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                  [Page 8]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
    The third set of metrics is a set of derived metrics that are derived
    from the earlier metrics.  They normalize the power consumption
@@ -478,6 +489,23 @@ Internet-Draft          Green Networking Metrics           December 2023
    on specifics of a particular application of which the network may not
    be aware, and not reflect the actual mix of applications being used.
 
+
+
+
+
+
+
+
+
+
+
+
+
+Clemm, et al.             Expires 17 June 2024                  [Page 9]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    The fourth set of metrics reflects expectation values about
    incremental energy usage.  These metrics could be relevant for use
    cases that assess the cost of additional traffic.  [Bolla2011] and
@@ -494,17 +522,6 @@ Internet-Draft          Green Networking Metrics           December 2023
       - pico Joules)
 
    *  Incremental power per gB
-
-
-
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                  [Page 9]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
 3.1.2.  Green Metrics Beyond Energy Consumption
 
@@ -537,6 +554,14 @@ Internet-Draft          Green Networking Metrics           December 2023
    combination with a factor associated with a device's power
    sustainability rating, this can result in an overall "pollution
    factor" that allows to better assess the true contribution that a
+
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 10]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    device is making on carbon footprint.  Weighing energy use by a
    pollution factor, resulting in pollution-aware networking, has been
    proposed in the literature as a more appropriate approach to
@@ -550,17 +575,6 @@ Internet-Draft          Green Networking Metrics           December 2023
       "weighted" power consumption that accounts for (for example) the
       portion of energy that is renewable.  This is typically referred
       to as Carbon Intensity, or Electricity emission factor.
-
-
-
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 10]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
    *  Deployment Sustainability Factor (DSF).  This factor reflects a
       factor to attribute a share of a deployment's overall power
@@ -597,26 +611,19 @@ Internet-Draft          Green Networking Metrics           December 2023
 
    *  etc.
 
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 11]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    As an option, it is conceivable to convert these metrics into
    approximate CO2 emission metrics using some formula to calculate the
    CO2-equivalent required to generate sustainability-weighted power.
    It is possible to define a corresponding set of conversion metrics.
    (It should be noted that CO2 is of course not the only greenhouse
    gas, but the one that is most broadly recognized.)
-
-
-
-
-
-
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 11]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
 3.1.3.  Virtualization Considerations
 
@@ -659,6 +666,14 @@ Internet-Draft          Green Networking Metrics           December 2023
    energy consumption and carbon footprint of real-world hosting
    infrastructure to individual virtual functions that run on top of
    that infrastructure.  Doing so accurately may involve challenges.
+
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 12]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    However, equivalent capabilities have been defined before in the
    context of cloud services running in data centers.  In that context,
    metrics have been proposed that attribute power usage to Virtual
@@ -666,14 +681,6 @@ Internet-Draft          Green Networking Metrics           December 2023
    (to determine waste), and all VMs (allowing to determine the ratio of
    overall power consumed that is truly wasted) [VMware2022].  As an
    alternative, a simpler solution may be to simply forgo energy metrics
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 12]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
-
    for virtualized functions entirely, instead focus on instrumenting
    and relying on optimizing the energy footprint of the underlying
    hosting infrastructure.
@@ -715,6 +722,14 @@ Internet-Draft          Green Networking Metrics           December 2023
    which still need to be attributed to the flow.  The same is true for
    packet loss, as lost packets may also contribute to the energy
    equation.  The carbon contribution of those packets until they were
+
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 13]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    dropped as well as their retransmission still needs to be attributed
    to their respective flow.  A third challenge concerns the ability to
    trace actual routes taken by production traffic.  On top of that,
@@ -722,13 +737,6 @@ Internet-Draft          Green Networking Metrics           December 2023
    whose contribution to carbon footprint may not be accounted for.  For
    these reasons, any metrics that are provided will need to come with
    corresponding disclaimers as applicable.
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 13]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
    Analogous to equipment metrics, metrics related to energy consumption
    can further be weighted with PSF and ST to better reflect their
@@ -770,6 +778,14 @@ Internet-Draft          Green Networking Metrics           December 2023
       of PSFs across all path segments (to reflect the "true cost" of
       the path in its entirety), or the average PSF of path segments.)
 
+
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 14]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    *  Current power consumption across a path.  (This could be computed
       by aggregating the current power per packet (or per kB etc.) of
       each of the hops along the path.)
@@ -777,14 +793,6 @@ Internet-Draft          Green Networking Metrics           December 2023
    *  Incremental power for a packet over a path.  (This could be
       computed by aggregating the incremental power per packet of each
       of the hops along the path.)
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 14]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
    Similar to some of the flow-related metrics, some caveats apply with
    regards to challenges in capturing all contributors to carbon
@@ -806,13 +814,33 @@ Internet-Draft          Green Networking Metrics           December 2023
    Operational Support Systems (or Business Support Systems) for the
    entire network.
 
-   Some of the metrics used include the following [Telefonica2021]:
+   Some of the metrics used include the following:
 
-   *  Total energy consumption (MWh)
+   *  Total energy consumption (MWh), the entire energy consumption that
+      can be attributed to the network [Telefonica2021]
 
-   *  Electricity from renewable sources (%)
+   *  Electricity from renewable sources (%), the percentage of total
+      energy consumption that comes from renewables [Telefonica2021]
 
-   *  Network energy efficiency (MWh/PB)
+   *  Network energy efficiency (MWh/PB), relating total energy
+      consumption to the utility derived from the network as measured by
+      the total amount of data being transmitted [Telefonica2021]
+
+   *  Energy efficiency rating (EER), the ratio between network net
+      energy consumption of networking devices and the total energy
+      consumption [ETSI2023-EEPS65]
+
+
+
+
+
+
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 15]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
 
 4.  Other considerations
 
@@ -834,14 +862,6 @@ Internet-Draft          Green Networking Metrics           December 2023
    example, the network could present clients with energy and carbon
    statistics related to their communication usage.  This could be
    supported by metrics related to service instances, such as energy
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 15]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
-
    usage statistics beyond statistics regarding volume, duration, number
    of transactions.  Such approaches would raise questions about how to
    actually collect such statistics accurately (versus just computing
@@ -870,6 +890,14 @@ Internet-Draft          Green Networking Metrics           December 2023
    or switches.  As a result, the sum of metrics contributed across all
    networking equipment may not reflect the total of the network as a
    whole.  In order to account for the contribution respectively carbon
+
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 16]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    overhead of those hidden devices, one straightforward way is to
    introduce a metric that provides the ratio of the sum of the known
    contributions of devices versus the contribution of the network as a
@@ -888,15 +916,6 @@ Internet-Draft          Green Networking Metrics           December 2023
    consumption of the end systems, including desktops, laptops, smart
    phones, cloud servers, and application servers that are not in the
    cloud.
-
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 16]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
    For those two components, the following factors need to take into
    consideration for energy consumption calculation:
@@ -928,6 +947,13 @@ Internet-Draft          Green Networking Metrics           December 2023
       those large devices, e.g., cellular towers, or environmental
       unfriendly equipment, such as submarine communication cables.
 
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 17]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    *  Disposal: There is substantial energy cost in disposing and
       recycling the old devices and equipment.
 
@@ -946,14 +972,6 @@ Internet-Draft          Green Networking Metrics           December 2023
    example) is neither constant nor linear but adheres to more complex
    functions.  In those cases, it may be advisable to allow for a way to
    express metrics in ways that allow to reflect a degree of
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 17]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
-
    uncertainty.  For example, power consumption can be addressed not as
    a single value but as a range defined by an upper and lower bound, as
    suggested e.g., in [Petrescu2010] for the expression of power
@@ -984,6 +1002,14 @@ Internet-Draft          Green Networking Metrics           December 2023
    202706-2][ETSI303215][ETSI203184][ETSI203136].  Specifically, this
    includes metrics regarding the power consumption and energy
    efficiency of network equipment, particularly in mobile networks but
+
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 18]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    also more generally in fixed access and transport and IP networks.
 
    Beyond energy consumption metrics for equipment, these standards also
@@ -995,20 +1021,6 @@ Internet-Draft          Green Networking Metrics           December 2023
    of metrics related to the energy efficiency metrics.  Future
    revisions of this document will therefore consider which of those
    metrics make sense to adopt here, pending further analysis.
-
-
-
-
-
-
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 18]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
 5.  Controversies
 
@@ -1047,6 +1059,13 @@ Internet-Draft          Green Networking Metrics           December 2023
 
    The stance taken in this document is therefore:
 
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 19]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
    *  No individual metric defined in this document paints a
       comprehensive picture by itself.  Instead, metrics are defined to
       complement one another, and generally speaking multiple metrics
@@ -1058,14 +1077,6 @@ Internet-Draft          Green Networking Metrics           December 2023
       terms of their purpose, services provided, and operational goals,
       which may render the use of individual metrics for comparisons of
       which is "better" meaningless.  However, comparisons to track
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 19]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
-
       progress over time may still make sense.  Again, combinations of
       metrics paint more nuanced pictures than metrics that are
       isolated.
@@ -1104,6 +1115,13 @@ Internet-Draft          Green Networking Metrics           December 2023
    reviews and super-helpful feedback on earlier versions of the
    document.
 
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 20]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
 9.  Informative References
 
    [Ahn2014]  Ahn, J. and H. S. Park, "Measurement and modeling the
@@ -1112,15 +1130,6 @@ Internet-Draft          Green Networking Metrics           December 2023
               Conference on Advanced Communication Technology, pp.
               860-863, 2014,
               <https://ieeexplore.ieee.org/document/6779082>.
-
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 20]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
    [ATIS0600015.02]
               ATIS, "Energy Efficiency for Telecommunication Equipment:
@@ -1142,6 +1151,11 @@ Internet-Draft          Green Networking Metrics           December 2023
               low_carbon_it_campaign/12_ways_save_energy_data_center/
               server_virtualization>.
 
+   [ETSI2023-EEPS65]
+              ETSI, "DES/EE-EEPS65: Environmental Engineering (EE):
+              Fixed Network Energy Efficiency definition and measurement
+              (Work Item)", October 2023.
+
    [ETSI202706-1]
               ETSI, "ES 202 706-1: Metrics and measurement method for
               energy efficiency of wireless access network equipment;
@@ -1153,6 +1167,16 @@ Internet-Draft          Green Networking Metrics           December 2023
               energy efficiency of wireless access network equipment;
               Part 2: Power consumption - dynamic measurement method",
               November 2018.
+
+
+
+
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 21]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
 
    [ETSI203136]
               ETSI, "ES 203 136: Measurement methods for energy
@@ -1166,17 +1190,6 @@ Internet-Draft          Green Networking Metrics           December 2023
    [ETSI203228]
               ETSI, "ES 203 228: Assessment of mobile network energy
               efficiency", October 2020.
-
-
-
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 21]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
    [ETSI303215]
               ETSI, "EN 303 215: Measurement methods and limits for
@@ -1198,12 +1211,13 @@ Internet-Draft          Green Networking Metrics           December 2023
               chunduri-rtgwg-preferred-path-routing-03>.
 
    [I-D.cparsk-eimpact-sustainability-considerations]
-              Pignataro, C., Rezaki, A., and S. Krishnan,
-              "Sustainability Considerations for Internetworking", Work
-              in Progress, Internet-Draft, draft-cparsk-eimpact-
-              sustainability-considerations-00, 8 November 2023,
-              <https://datatracker.ietf.org/doc/html/draft-cparsk-
-              eimpact-sustainability-considerations-00>.
+              Pignataro, C., Rezaki, A., Krishnan, S., ElBakoury, H.,
+              and A. Clemm, "Sustainability Considerations for
+              Internetworking", Work in Progress, Internet-Draft, draft-
+              cparsk-eimpact-sustainability-considerations-01, 15
+              December 2023,
+              <https://datatracker.ietf.org/api/v1/doc/document/draft-
+              cparsk-eimpact-sustainability-considerations/>.
 
    [I-D.cx-green-ps]
               Clemm, A., Westphal, C., Tantsura, J., Ciavaglia, L., and
@@ -1213,6 +1227,19 @@ Internet-Draft          Green Networking Metrics           December 2023
               <https://datatracker.ietf.org/doc/html/draft-cx-green-ps-
               02>.
 
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 22]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
+
+   [I-D.li-ivy-power]
+              Li, T. and R. Bonica, "A YANG model for Power Management",
+              Work in Progress, Internet-Draft, draft-li-ivy-power-01,
+              17 October 2023, <https://datatracker.ietf.org/doc/html/
+              draft-li-ivy-power-01>.
+
    [I-D.manral-bmwg-power-usage]
               Manral, V., Sharma, P., Banerjee, S., and Y. Ping,
               "Benchmarking Power usage of networking devices", Work in
@@ -1220,19 +1247,15 @@ Internet-Draft          Green Networking Metrics           December 2023
               04, 12 March 2013, <https://datatracker.ietf.org/doc/html/
               draft-manral-bmwg-power-usage-04>.
 
+   [I-D.opsawg-poweff]
+              Lindblad, J., Mitrovic, S., Palmero, M., and G. Salgueiro,
+              "Power and Energy Efficiency", Work in Progress, Internet-
+              Draft, draft-opsawg-poweff-00, 20 October 2023,
+              <https://datatracker.ietf.org/doc/html/draft-opsawg-
+              poweff-00>.
+
    [JuniperRouterPower]
               Juniper, "Power Requirements for an MX960 Router", 2021.
-
-
-
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 22]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
 
    [Petrescu2010]
               Petrescu, A., Janneteau, C., Olivereau, A., and M. Kellil,
@@ -1256,6 +1279,16 @@ Internet-Draft          Green Networking Metrics           December 2023
               Protocol for the Exchange of Flow Information", STD 77,
               RFC 7011, DOI 10.17487/RFC7011, September 2013,
               <https://www.rfc-editor.org/info/rfc7011>.
+
+
+
+
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 23]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
 
    [RFC7012]  Claise, B., Ed. and B. Trammell, Ed., "Information Model
               for IP Flow Information Export (IPFIX)", RFC 7012,
@@ -1281,15 +1314,6 @@ Internet-Draft          Green Networking Metrics           December 2023
               DOI 10.17487/RFC8655, October 2019,
               <https://www.rfc-editor.org/info/rfc8655>.
 
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 23]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
-
    [Shenoy2022]
               Shenoy, P., "Energy-Efficiency versus Carbon-Efficiency:
               What's the difference?", DOI: 10.1145/3584024.3584025, ACM
@@ -1312,6 +1336,15 @@ Internet-Draft          Green Networking Metrics           December 2023
               vrealize-operations-86-reference-guide.pdf>.
 
 Authors' Addresses
+
+
+
+
+
+Clemm, et al.             Expires 17 June 2024                 [Page 24]
+
+Internet-Draft          Green Networking Metrics           December 2023
+
 
    Alexander Clemm (editor)
    Futurewei
@@ -1339,13 +1372,6 @@ Authors' Addresses
    Email: laurent.ciavaglia@nokia.com
 
 
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 24]
-
-Internet-Draft          Green Networking Metrics           December 2023
-
-
    Jeff Tantsura
    Nvidia
    Email: jefftant.ietf@gmail.com
@@ -1371,30 +1397,4 @@ Internet-Draft          Green Networking Metrics           December 2023
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Clemm, et al.             Expires 12 June 2024                 [Page 25]
+Clemm, et al.             Expires 17 June 2024                 [Page 25]
